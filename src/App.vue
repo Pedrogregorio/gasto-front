@@ -19,15 +19,15 @@
       fixed
       app
     >
-      <v-btn to="/adicionar_conta">
+      <v-btn class="btn-pedro" to="/adicionar_conta">
         <span>Conta</span>
         <v-icon>mdi-plus</v-icon>
       </v-btn>
-      <v-btn to="/">
+      <v-btn class="btn-pedro" to="/">
         <span>inicio</span>
         <v-icon>mdi-home</v-icon>
       </v-btn>
-      <v-btn to="/adicionar_ajuda">
+      <v-btn class="btn-pedro" to="/adicionar_ajuda">
         <span>Ajuda</span>
         <v-icon>mdi-plus</v-icon>
       </v-btn>
