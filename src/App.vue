@@ -19,15 +19,15 @@
       fixed
       app
     >
-      <v-btn class="v-btn--active v-btn--active v-btn v-btn--is-elevated v-btn--has-bg v-btn--router theme--light v-size--default" to="/adicionar_conta">
+      <v-btn to="/adicionar_conta">
         <span>Conta</span>
         <v-icon>mdi-plus</v-icon>
       </v-btn>
-      <v-btn class="v-btn--active v-btn--active v-btn v-btn--is-elevated v-btn--has-bg v-btn--router theme--light v-size--default" to="/">
+      <v-btn to="/">
         <span>inicio</span>
         <v-icon>mdi-home</v-icon>
       </v-btn>
-      <v-btn class="v-btn--active v-btn--active v-btn v-btn--is-elevated v-btn--has-bg v-btn--router theme--light v-size--default" to="/adicionar_ajuda">
+      <v-btn to="/adicionar_ajuda">
         <span>Ajuda</span>
         <v-icon>mdi-plus</v-icon>
       </v-btn>
@@ -64,6 +64,19 @@ export default {
   .nav{
     text-align: center !important;
     background-color:  #0dfae6cd!important;
+  }
+
+  .btn-pedro{
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    flex: 0 1 auto !important;
+    font-size: .75rem !important;
+    height: inherit !important;
+    max-width: 168px !important;
+    min-width: 80px !important;
+    position: relative !important;
+    text-transform: none !important;
   }
 
   .main{
