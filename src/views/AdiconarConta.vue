@@ -32,6 +32,12 @@
         required
       />
 
+      <v-text-field
+        v-model="pagar_ate"
+        label="Pagar Até"
+        type="date"
+      />
+
       <v-btn class="ajuda" @click="adicionarConta">+ Adicionar</v-btn>
     </v-form>  
     </v-card>
@@ -46,6 +52,7 @@
         gasto: '',
         parcela: 1,
         select: null,
+        pagar_ate: '',
         items: [
           'Mae',
           'Pai',
@@ -61,7 +68,8 @@
           nome: this.select,
           conta: this.gasto,
           valor: this.valor,
-          parcela: this.parcela
+          parcela: this.parcela,
+          pagar_ate: this.pagar_ate
         }
         Api.adicionarContaBanco(request).then(()=>{
           this.$router.push({name: "ListaConta"})
