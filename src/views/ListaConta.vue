@@ -17,7 +17,7 @@
           </v-row>
           <v-row>
             <v-col>
-              {{conta.nome}}
+              {{conta.pagar_ate}}
             </v-col>
             <v-col>
               <v-btn v-if="conta.ativa" @click="pagarConta(conta._id)">Pagar Conta</v-btn>

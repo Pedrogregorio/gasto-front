@@ -21,6 +21,11 @@
             <v-list-item-title>Gasto: {{contas.conta}}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+        <v-list-item two-line>
+          <v-list-item-content>
+            <v-list-item-title>Pessoa: {{contas.nome}}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
         <v-checkbox 
           label="Pagar Todas as parcelas?"
           v-model="parcela" 
